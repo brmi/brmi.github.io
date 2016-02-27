@@ -1,0 +1,31 @@
+/* line 1, ../scss/homepage.scss */
+body {
+  background-image: url("../img/grid.png");
+  background-repeat: repeat;
+}
+
+/* line 6, ../scss/homepage.scss */
+ul {
+  list-style: none;
+}
+/* line 8, ../scss/homepage.scss */
+ul li {
+  display: inline;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+/* line 13, ../scss/homepage.scss */
+ul li a {
+  color: #66757f;
+  text-decoration: none;
+}
+/* line 17, ../scss/homepage.scss */
+ul li a:hover {
+  color: #fb8805;
+}
+
+/* line 23, ../scss/homepage.scss */
+nav[role="navigation"] {
+  background: white;
+}
