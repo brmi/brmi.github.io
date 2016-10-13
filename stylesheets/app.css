@@ -1,5 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Space+Mono:400,700";
-@import "https://fonts.googleapis.com/css?family=Arvo:700";
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700";
 /* line 431, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.5.3/";
@@ -9737,108 +9736,464 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 45, ../scss/app.scss */
+/* line 7, ../scss/app.scss */
 body {
-  background-color: #FDF5EF;
-  font-family: 'Space Mono', monospace;
+  background-color: #FFF;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
-/* line 50, ../scss/app.scss */
+/* line 12, ../scss/app.scss */
+.header {
+  height: 90px;
+  position: fixed;
+  z-index: 9999;
+  background: white;
+}
+
+/* line 19, ../scss/app.scss */
 h1 {
-  text-align: center;
-  font-family: 'Arvo', serif;
+  font-weight: 300;
+  color: #ffce5a;
+}
+
+/* line 24, ../scss/app.scss */
+.features {
+  margin-left: 0px;
+}
+/* line 26, ../scss/app.scss */
+.features li {
+  padding: 2px;
+  font-weight: 300;
+}
+/* line 29, ../scss/app.scss */
+.features li img {
+  width: 15px;
+  position: relative;
+  bottom: 2px;
+  right: 3px;
+}
+
+/* line 39, ../scss/app.scss */
+.specific-features {
+  color: #5ECDBC;
+  font-size: 1.1em;
   font-weight: 700;
-  font-size: 6.4em;
+  padding-bottom: 3px;
+  display: block;
+}
+
+/* line 48, ../scss/app.scss */
+.project-description {
+  font-weight: 300;
+}
+
+/* line 52, ../scss/app.scss */
+.project-description-captions {
+  padding: 10px 20px 40px 20px;
+  font-weight: 300;
 }
 
 /* line 57, ../scss/app.scss */
-.container {
-  margin: 25px auto;
-  width: 80%;
-  background-color: white;
+.labels {
+  font-size: 1.1em;
+  font-weight: 300;
+  color: #ffce5a;
 }
 
-/* line 63, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
+.project-infos {
+  padding-top: 40px;
+}
+
+/* line 68, ../scss/app.scss */
+.lined-list ul li {
+  padding: 0px;
+  font-weight: 300;
+}
+
+/* line 73, ../scss/app.scss */
 .inline-list {
   display: table;
   margin: 0 auto;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 78, ../scss/app.scss */
 ul {
   list-style-type: none;
-  width: 75%;
-  text-align: center;
-  margin: 0 auto;
+  float: left;
 }
 
-/* line 75, ../scss/app.scss */
-ul.menu {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 79, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 li {
   list-style-type: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 30px;
 }
 
-/* line 85, ../scss/app.scss */
-li:hover {
-  background-color: #FAFA4A;
-  color: black;
-}
-
-/* line 90, ../scss/app.scss */
+/* line 88, ../scss/app.scss */
 li a {
-  font-size: 1.2em;
+  font-size: 1em;
   color: black;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-/* line 96, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
+li a:hover {
+  color: #ffce5a;
+}
+
+/* line 98, ../scss/app.scss */
 li a:focus {
   outline: 0;
 }
 
-/* line 100, ../scss/app.scss */
-.about {
-  margin: 0 auto;
+/* line 102, ../scss/app.scss */
+.content {
+  position: relative;
+  top: 90px;
 }
 
-/* line 104, ../scss/app.scss */
-.icon-straw {
-  width: 70px;
-  height: 66px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  background-color: #FB7777;
-  position: absolute;
-  left: 0;
+/* line 107, ../scss/app.scss */
+.header-projects {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* line 111, ../scss/app.scss */
+.projects-project {
+  margin-top: 120px;
 }
 
 /* line 115, ../scss/app.scss */
-.outline {
-  height: 66px;
-  border: 1px solid #eee;
-  background: #fbfbfb;
-  margin-bottom: 20px !important;
+section {
+  padding: 60px;
+  height: 400px;
 }
 
-/* line 122, ../scss/app.scss */
-.sub-container {
-  width: 80%;
-  margin: 0 auto;
+/* line 119, ../scss/app.scss */
+.profile {
+  background: #ffce5a;
 }
 
-/* line 127, ../scss/app.scss */
-.middle {
-  vertical-align: middle;
-  font-size: 1.4em;
+/* line 123, ../scss/app.scss */
+.profile-contact {
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  background: #ffce5a;
+}
+/* line 129, ../scss/app.scss */
+.profile-contact .profile-info .section-headers p {
+  margin-top: 90px;
+}
+
+/* line 134, ../scss/app.scss */
+.section-headers {
+  margin-top: -40px;
+}
+/* line 136, ../scss/app.scss */
+.section-headers p {
+  font-size: 3em;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+/* line 142, ../scss/app.scss */
+.section-headers :after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 18px;
+  height: 1px;
+  margin-top: .02em;
+}
+
+/* line 153, ../scss/app.scss */
+.work-info-section-header p {
   color: black;
-  padding-top: 16.5px;
+}
+/* line 156, ../scss/app.scss */
+.work-info-section-header :after {
+  background: black;
+}
+
+/* line 161, ../scss/app.scss */
+.profile-img {
+  height: 130px;
+  width: 130px;
   float: left;
+  border-radius: 130px;
+  margin-right: 30px;
+}
+/* line 165, ../scss/app.scss */
+.profile-img img {
+  border-radius: 130px;
+}
+
+/* line 172, ../scss/app.scss */
+.social-accounts {
+  margin: 0 0;
+  padding: 0;
+}
+/* line 175, ../scss/app.scss */
+.social-accounts li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 1em;
+  padding: 0;
+  vertical-align: middle;
+}
+/* line 181, ../scss/app.scss */
+.social-accounts li a {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+}
+/* line 190, ../scss/app.scss */
+.social-accounts li a img {
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+  line-height: 100%;
+  height: 100%;
+}
+
+/* line 201, ../scss/app.scss */
+.profile-description {
+  position: relative;
+  width: 90%;
+}
+/* line 204, ../scss/app.scss */
+.profile-description p {
+  color: white;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 200%;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 214, ../scss/app.scss */
+  .profile-description {
+    width: 90%;
+  }
+  /* line 216, ../scss/app.scss */
+  .profile-description p {
+    font-size: 1em;
+  }
+
+  /* line 220, ../scss/app.scss */
+  .profile-img {
+    height: 80px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  /* line 228, ../scss/app.scss */
+  .profile-description {
+    width: 100%;
+    top: 5px;
+  }
+
+  /* line 232, ../scss/app.scss */
+  .profile-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  /* line 237, ../scss/app.scss */
+  .project-pic {
+    padding: 10px;
+  }
+  /* line 239, ../scss/app.scss */
+  .project-pic a img {
+    max-height: 500px !important;
+  }
+}
+@media only screen and (max-width: 430px) {
+  /* line 248, ../scss/app.scss */
+  .profile-description {
+    top: 0px;
+    width: 100%;
+  }
+
+  /* line 252, ../scss/app.scss */
+  .profile-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  /* line 257, ../scss/app.scss */
+  section {
+    padding: 70px 40px 70px 40px;
+    height: auto;
+  }
+
+  /* line 263, ../scss/app.scss */
+  .section-headers p {
+    margin-bottom: 20px;
+  }
+
+  /* line 268, ../scss/app.scss */
+  .project-pic {
+    border-bottom: 1px solid #E0E0E0;
+  }
+
+  /* line 271, ../scss/app.scss */
+  .project-pic:last-child {
+    border-bottom: none;
+  }
+
+  /* line 276, ../scss/app.scss */
+  .inline-list li {
+    padding: 30px 5px 30px 5px;
+  }
+
+  /* line 281, ../scss/app.scss */
+  .email {
+    font-size: 1.3em !important;
+  }
+}
+@media only screen and (max-width: 330px) {
+  /* line 289, ../scss/app.scss */
+  .inline-list li {
+    padding: 20px 5px 20px 5px;
+  }
+
+  /* line 294, ../scss/app.scss */
+  .header {
+    height: auto;
+  }
+
+  /* line 299, ../scss/app.scss */
+  .profile-description p {
+    line-height: 150%;
+  }
+
+  /* line 303, ../scss/app.scss */
+  .content {
+    top: 50px;
+  }
+
+  /* line 308, ../scss/app.scss */
+  .section-headers p {
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  /* line 315, ../scss/app.scss */
+  .email {
+    font-size: 1.1em !important;
+  }
+}
+/* line 321, ../scss/app.scss */
+.project-pic {
+  padding: 10px;
+}
+/* line 323, ../scss/app.scss */
+.project-pic a img {
+  max-height: 160px;
+}
+
+/* line 328, ../scss/app.scss */
+.proj-desc {
+  padding-top: 10px;
+}
+
+/* line 331, ../scss/app.scss */
+.proj-desc p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+/* line 337, ../scss/app.scss */
+.proj-desc .date {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: .9em;
+}
+
+/* line 342, ../scss/app.scss */
+.proj-desc .tags ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+/* line 346, ../scss/app.scss */
+.proj-desc .tags ul li {
+  display: inline-block;
+  font-size: .9em;
+  padding: 3px;
+  color: #B0B0B0;
+}
+
+/* line 353, ../scss/app.scss */
+.proj-name {
+  color: #5ECDBC;
+  font-size: 1.2em;
+}
+
+/* Mobile Nav */
+/* line 359, ../scss/app.scss */
+.nav-open {
+  border: 3px solid black;
+  height: 30px;
+  left: 5%;
+  position: absolute;
+  top: 6%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+}
+/* line 368, ../scss/app.scss */
+.nav-open .inner, .nav-open .inner::before, .nav-open .inner::after {
+  background-color: black;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 14px;
+  transition: all .5s ease;
+}
+/* line 377, ../scss/app.scss */
+.nav-open .inner {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 383, ../scss/app.scss */
+.nav-open .inner::before {
+  margin-top: -6px;
+  position: absolute;
+}
+/* line 388, ../scss/app.scss */
+.nav-open .inner::after {
+  margin-top: 6px;
+  position: absolute;
+}
+
+/* line 396, ../scss/app.scss */
+.nav-open.nav-close .inner {
+  background-color: transparent;
+  left: 54%;
+}
+/* line 400, ../scss/app.scss */
+.nav-open.nav-close .inner::before, .nav-open.nav-close .inner::after {
+  transform: rotate(45deg);
+  transform-origin: 0 50%;
+  width: 17px;
+}
+/* line 406, ../scss/app.scss */
+.nav-open.nav-close .inner::after {
+  transform: rotate(-45deg);
+}
+
+/* line 412, ../scss/app.scss */
+.email {
+  font-size: 2em;
+  font-weight: 300;
+  color: white;
 }
