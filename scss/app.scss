@@ -236,9 +236,17 @@ section{
 
     .project-pic{
         padding: 10px;
-        a img{
+        a 
+        {
+          display: block;
+          text-align: center;
+          img{
             max-height: 500px !important;
+            margin: 0 auto;
+            display: block;
+          }
         }
+        
     }
 
 }
@@ -267,6 +275,12 @@ section{
 
   .project-pic{
     border-bottom: 1px solid #E0E0E0;
+    a{
+      img{
+        display:block;
+        margin: 0 auto;
+      }
+    }
   }
   .project-pic:last-child{
     border-bottom:none;
@@ -322,6 +336,8 @@ section{
     padding: 10px;
     a img{
         max-height: 160px;
+        display:block;
+        margin: 0 auto;
     }
 }
 
