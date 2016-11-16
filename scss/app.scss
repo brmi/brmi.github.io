@@ -2,11 +2,12 @@
 @import "foundation";
 @import 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700';
 
-$main: #ffce5a;
-$subcolor: #5ECDBC;
+$main: #E6CCFF;
+$subcolor: #000;
 body{
     background-color: #FFF;
     font-family: 'Lato', Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
 }
 
 .header{
@@ -205,12 +206,13 @@ section{
 
 .profile-description{
     position:relative;
+    margin-left: 10%;
     width: 90%;
     p{
         color:white;
-        font-weight: 300;
-        font-size: 1.1em;
-        line-height: 200%;
+        font-weight: 400;
+        font-size: 1.3em;
+        line-height: 2;
     }
 }
 
@@ -253,6 +255,11 @@ section{
         }
         
     }
+
+}
+
+.project-pic{
+  height: 400px;
 
 }
 
@@ -373,7 +380,7 @@ section{
 
 .proj-name {
   color: $subcolor;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 /* Mobile Nav */
