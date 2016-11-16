@@ -26,7 +26,8 @@ h1{
   margin-left: 0px;
   li{
     padding: 2px;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1.3em;
     img{
       width: 15px;
       position:relative;
@@ -39,7 +40,7 @@ h1{
 
 .specific-features{
   color: $subcolor;
-  font-size: 1.1em;
+  font-size: 1.7em;
   font-weight: 700;
   padding-bottom: 3px;
   display:block;
@@ -47,18 +48,21 @@ h1{
 
 
 .project-description{
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.3em;
 }
 
 .project-description-captions{
-  padding: 10px 20px 40px 20px;
-  font-weight: 300;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 1.3em;
 }
 
 .labels{
-  font-size: 1.1em;
-  font-weight: 300;
-  color: $main;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #000;
 
 }
 
@@ -66,9 +70,15 @@ h1{
   padding-top: 40px;
 }
 
+.lined-list{
+  margin-top: 5px;
+}
+
 .lined-list ul li{
   padding: 0px;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 2px;
 }
 
 .inline-list{
@@ -155,6 +165,9 @@ section{
     }
 }
 
+.highlight{
+  background: rgba(230,204,255, 0.5);
+}
 .work-info-section-header{
     p{
         color: black;
@@ -256,6 +269,12 @@ section{
         
     }
 
+}
+
+.project-page h1{
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #000;
 }
 
 .project-pic{

@@ -25,16 +25,16 @@
         </div> 
         <div class="row">
         <div class="small-12 columns projects-project">
-          <div class="small-7 medium-7 large-7 columns project-page">
-            <h1>Daily Bruin Print Archive Data Collection</h1>
+          <div class="small-12 medium-8 large-8 columns project-page">
+            <h1>UCLA Print Archive</h1>
             <p class="project-description">
-              The goal of the site is to have one place where a reader can easily access the day's paper from any day in the Daily Bruin's history. The tricky thing is, some of the archive.org reels cover multiple years, while others cover only a few months; and there's no way to know the start or end dates without going through them manually. Additionally, searching for a date in the middle of the reel, which contains different newspapers of different page lengths, is a challenge. The Google Drive folder also grows nightly.
+              The goal of the site is to have one place where a reader can easily access the day's paper from any day in the Daily Bruin's history. The tricky thing is most of the Daily Bruin's history is stored in pdf reels up to <span class="highlight">600 pages long </span>. Some of the archive.org reels cover multiple years, while others cover only a few months.Searching for a date in the middle of the reel, which contains different newspapers of different page lengths, is a challenge. </p>
+            <p class="project-description">
+              Currently, my team is working with the Google Vision API to try and <span class="highlight">extract the dates for each page</span>. So far, we have successfully been able to extract the dates on a small sample reel! One problem we have run into is the formatting of the date on each page. For cover pages, we can count on the full date being on the page; however, for the remaining pages of the paper, sometimes the year is not included in the date.. some pages don't have dates at all. We are working on a script that will "guess" the date of the page based on the previous cover pages date.
              <p>
-              <p class="project-description">
-                This specific sub-project has to do with identifying dates on a specific PDF page. OCRing the PDFs doesn't
-                seem to be a reliable way to identify the dates on the page. The only way to do this is manually. The goal of this project is to have people manually input the date with the PDF page shown on the screen. With over 100 years worth of newpapers, we want as many people helping to manually add the dates as possible. To do this, 
-                we need a user friendly interface.
-              </p>
+            <p class="project-description">
+              Check out our progress below!
+             <p>
               
             <div class="the-features">
               
@@ -42,12 +42,12 @@
                 SPECIFIC FEATURES 
               </span>
               <ul class="features">
-                <li><img src="img/star.svg">Let user enter date in calendar module so input formats will be the same.</li>
-                <li><img src="img/star.svg">Let user's double check inputs from other users past inputs</li>
+                <li><img src="img/star.svg">Let users search by date. (First Priority)</li>
+                <li><img src="img/star.svg">Let users search by text.</li>
               <ul>
             </div>
           </div>
-          <div class="small-5 medium-5 large-5 columns">
+          <div class="small-12 medium-4 large-4 columns">
             <div class="lined-list">
               <ul>
                 <li><span class="labels">Role:</span> Project Manager and Developer </li>
@@ -60,6 +60,21 @@
 
           <div class="small-12 columns project-infos">
             
+
+            <div class="project-image">
+              <a target="_blank" href="img/print_archive_helper/lofisketches.jpg"><img src="img/print_archive_helper/lofisketches.jpg" alt="Workflow" /></a>
+              <p class="project-description-captions">Lofi sketches of user interface</p>
+            </div>
+
+            <div class="project-image">
+              <a target="_blank" href="img/print_archive_helper/workflow.jpg"><img src="img/print_archive_helper/workflow.jpg" alt="Workflow" /></a>
+              <p class="project-description-captions">Workflow</p>
+            </div>
+
+            <div class="project-image">
+              <a target="_blank" href="img/print_archive_helper/LandingPage.gif"><img src="img/print_archive_helper/LandingPage.gif" alt="Project 01b" /></a>
+              <p class="project-description-captions">Landing Page for the Daily Bruin Print Archive</p>
+            </div>
             
             
           </div>
