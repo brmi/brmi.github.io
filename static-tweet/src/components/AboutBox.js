@@ -58,7 +58,7 @@ const AboutBox = () => (
         <li>
           <h3 className="organization"> UCLA </h3>
           <h4 className="title"><span className="boldItalicRed"> > </span> Computer Science BA </h4>
-          <h5 className="dates"><span className="boldItalicRed"> >> </span>Graudate December 2018 </h5>
+          <h5 className="dates"><span className="boldItalicRed"> >> </span>Graduate December 2018 </h5>
         </li>
 				<li>
 					<h3 className="organization"> Qualcomm </h3>

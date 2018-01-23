@@ -3,7 +3,6 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Work from './Work'
-import Contact from './Contact'
 
 
 // The Main component renders one of the three provided

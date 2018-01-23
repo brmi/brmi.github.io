@@ -123,12 +123,6 @@ a:visited { text-decoration: none; color:black; }
 .header ul li a:hover{
 	color: white;
 	background-color: #fe065e;
-
-}
-
-.header ul li a:focus{
-	color: white;
-	background-color: #fe065e;
 }
 
 .header ul li.name div a{
@@ -142,31 +136,6 @@ a:visited { text-decoration: none; color:black; }
 
 
 /* Header Smaller Screens */
-@media (max-width: 750px){
-
-	.header ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.header ul li.name{
-		margin-right: 0;
-		padding-left: 0;
-	}
-
-	.header ul li.name div{
-		position : relative;
-		left: 0px;
-	    text-align : center;
-	    margin : 0 auto;
-	}
-
-	.header ul li.links{
-		display: none;
-	}
-
-}
 
 /* Home */
 
@@ -203,6 +172,165 @@ a:visited { text-decoration: none; color:black; }
 }
 
 /* About */
+@media only screen and (max-width : 1315px) {
+	.item ul li{
+		font-size: 15px !important;
+	}
+}
+@media only screen and (max-width : 1055px) {
+	.aboutBox{
+		display: flex;
+		flex-direction: column;
+/*		background-color: red;*/
+	}
+	.favoriteItems{
+		flex-direction: column;
+	}
+	.item ul{
+		display: inline !important;
+	}
+
+	.item{
+		padding-bottom: 50px;
+		/*width: 270px;*/
+	}
+	.item p{
+		font-size: 20px !important;
+	}
+	.item ul li{
+		font-size: 18px !important;
+		display: inline !important;
+	}
+}
+
+@media only screen and (max-width : 800px) {
+	.homePageContainer{
+		margin: 5px 0px 5px 0px !important;
+	}
+
+	.workContainer, .homeContainer{
+		margin: 5px 20px 5px 20px !important
+	}
+
+	.aboutContainer{
+		margin: 10px 0px 10px 0px !important;
+	}
+	.currentFavorites{
+		margin-left: 10px !important;
+	}
+	.homeText{
+		font-size: 25px !important;
+		text-align: center;
+	}
+
+	.aboutBox{
+		display: flex;
+		flex-direction: column;
+		/*background-color: pink;*/
+	}
+	.aboutwriteup{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.overview{
+		align-self: flex-start;
+		padding-left: 0 !important;
+	}
+	.aboutpic{
+		margin: 0 !important;
+	}
+	.description{
+		padding: 20px !important;
+		width: 100% !important;
+	}
+	
+	audio{
+		width: 200px !important;
+	}
+	.songbox{
+		width: 200px !important;
+	}
+}
+
+@media (max-width: 750px){
+	.header ul li.name div a {
+		font-size: 30px;
+	}
+
+	.header ul li.name{
+		margin-right: 0;
+		padding-left: 0;
+		padding-top: 10px;
+	}
+
+	.header ul li.name div{
+		position : relative;
+		left: 0px;
+	    text-align : center;
+	    margin : 0 auto;
+	    width: 70% !important;
+	}
+	.header ul li{
+		padding-top: 10px !important;
+		padding-right: 0 !important;
+		flex-direction: row;
+		height: 50px !important;
+	}
+
+	.header ul{
+		flex-direction: column;
+	}
+
+	.header{
+		height: 100%;
+	}
+
+	.landingText p{
+		width: 90% !important;
+		font-size: 28px !important;
+	}
+	.workInfo{
+		min-width: 40px !important;
+	}
+	.workInfo h2{
+		font-size: 34px !important;
+	}
+	.workInfo h3{
+		font-size: 28px !important;
+	}
+
+	.workDescription p{
+		font-size: 24px !important;
+	}
+
+	.workItem{
+		flex-direction: column;
+		justify-content: flex-start !important;
+		align-items: flex-start !important;
+	}
+
+	.projectInfo{
+		flex-direction: column;
+	}
+
+	.projectDescription{
+		width: 100% !important;
+	}
+
+	.role{
+		padding-top: 20px !important;
+		width: 100% !important;
+	}
+
+	.projectDescription .info p{
+		width: 100% !important;
+	}
+
+}
+
+
 .aboutContainer{
 	display: block;
 	margin:40px 0px 50px 0px;
@@ -216,7 +344,6 @@ a:visited { text-decoration: none; color:black; }
 	margin-bottom: 8px;
 }
 .aboutBox{
-	height: 370px;
 	display: flex;
 	justify-content: flex-start;
 }
@@ -306,6 +433,7 @@ a:visited { text-decoration: none; color:black; }
 	padding-top: 3px;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .songbox{

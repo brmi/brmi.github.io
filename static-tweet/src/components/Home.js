@@ -1,6 +1,4 @@
 import React from 'react'
-import AboutBox from './AboutBox'
-import Favorites from './Favorites'
 
 const Home = () => (
 <div className="landingPageContainer">
