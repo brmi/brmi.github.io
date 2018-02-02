@@ -1,4 +1,5 @@
 import React from 'react'
+import DiscoverLatelyPic from '../images/discoverLately/discoverLately.png'
 
 const DiscoverLately = () => (
 <div className="projectContainer">
@@ -10,11 +11,11 @@ const DiscoverLately = () => (
             <div className="info">
                 <h1>info</h1>
                 <p>
-                  Discover Lately is a web app that allows the user to see their most frequently played songs on Spotify and export those songs 
+                  Discover Lately is a web app that allows the user to see their 20 most frequently played songs on Spotify and export those songs 
                   to a playlist on Spotify. 
                 </p>
                 <br/>
-                <p><a target="_blank" href="http://discoverlately-backend.herokuapp.com/login">Discover your latest tracks!</a></p>
+                <p><a target="_blank" href="http://discoverlately.herokuapp.com">Discover your latest tracks!</a></p>
             </div>
 
             <div className="theFeatures">
@@ -30,7 +31,6 @@ const DiscoverLately = () => (
                 <h2> future plans </h2>
                 <ul className="features">
                     <li><span className="boldItalicRed"> >> </span>Make it faster! </li>
-                    <li><span className="boldItalicRed"> >> </span>Make url less weird</li>
                     <li><span className="boldItalicRed"> >> </span>Add loading animations</li>
                     <li><span className="boldItalicRed"> >> </span>See what geographic location a track is listened to most</li>
                 </ul>
@@ -48,7 +48,19 @@ const DiscoverLately = () => (
               </ul>
         </div>   
     </div>
+
+    <div className="projectSources">
+
+      <div className="projectImage">
+        <a target="_blank" href={DiscoverLatelyPic}><img src={DiscoverLatelyPic} alt="Screenshot of Discover Lately website" /></a>
+        <p className="projectDescriptionCaptions">Example of what Discover Lately looks like. Here are my current top songs!</p>
+      </div>
+
+    </div>
+
 </div>
+
+
 
 )
 
