@@ -1,19 +1,30 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700i');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap');
 @font-face {
     font-family: CircularStd;
     src: url("./fonts/CircularStd-Black.woff") format("woff"), url("./fonts/CircularStd-Black.ttf")  format("truetype");
 }
-
+body {
+	background-color: #f3f3f3;
+}
 /* General */
 * {
 	margin: 0;
 	padding: 0;
 	border: none; 
-	font-family: 'CircularStd', 'Cabin', Arial, sans-serif;
+	font-family: 'Sora', Arial, sans-serif;
 }
 
-a:visited { text-decoration: none; color:black; }
+a {
+	color: #03807d;
+}
+
+.body-container {
+	min-height: 100vh;
+	
+}
+
+a:visited { text-decoration: none; color:#03807d; }
 
 /* Fade in Page */
 .homePageContainer, .workContainer, .landingPageContainer{
@@ -32,11 +43,12 @@ a:visited { text-decoration: none; color:black; }
     }
 }
 
+
+
 /* Header */
 .header{
 	height: 130px;
-	/*background-color: #EC2A54;*/
-	background-color: white;
+	width: 100%;
 }
 
 .header ul {
@@ -60,70 +72,24 @@ a:visited { text-decoration: none; color:black; }
 	padding-left: 30px;
 }
 
-.header ul li.name div{
-	background-color:blue;;
-	transition: background-color 0.4s ease;
-	position : relative;
-	left: 40px;
-    display : block;
-    height : 50px;
-    width : 115%;
-    text-align : center;
-    margin : 0 auto;
-    z-index: 1;
-}
-
-.header ul li.name div::before {
-    content: '';
-    height: 50px;
-    width: 50px;
-    background-color: blue;;
-    transition: background-color 0.4s ease;
-    position: absolute;
-    top: 0;
-    left: 0px;
-    transform: skewX(155deg);
-    transform-origin: top;
-    z-index: -1;
-}
-
-
-.header ul li.name div::after {
-    content: '';
-    height: 50px;
-    width: 50px;
-    background-color: blue;;
-    transition: background-color 0.4s ease;
-    position: absolute;
-    top: 0;
-    right: 0;
-    right: -30px;
-    transform: skewX(155deg);
-    transform-origin: top;
-    z-index: -1;
-}
-
 .header ul li a{
 	text-decoration: none;
-	font-style: italic;
-	font-size: 28px;
+	font-size: 22px;
 	font-weight: 400;
-	color: black;
+	color: #03807d;
 	padding: 10px;
-	background-color: transparent;;
-	transition: background-color 0.4s ease;
+	transition: all 0.3s ease-in-out;
 }
 
 .header ul li a:hover{
-	color: white;
-	background-color: #d8b5f3;
+	opacity: 0.5;
+	
 }
 
 .header ul li.name div a{
-	color: white;
-	font-size: 42px;
-	font-style: italic;
-	font-weight: 700;
+	color: #03807d;
+	font-size: 26px;
+	font-weight: 500;
 	background-color: transparent;
 	transition: background-color 0.4s ease;
 }
@@ -150,7 +116,7 @@ a:visited { text-decoration: none; color:black; }
 	font-size:40px;
 	font-weight: 400;
 	/*color:#FDC1BF;*/
-	color: #d8b5f3;
+	color: #03807d;
 	/*color: #FFE2CC;*/
 }
 
@@ -248,7 +214,7 @@ a:visited { text-decoration: none; color:black; }
 	}
 }
 
-@media (max-width: 750px){
+@media (max-width: 1024px){
 	.header ul li.name div a {
 		font-size: 30px;
 	}
@@ -289,14 +255,14 @@ a:visited { text-decoration: none; color:black; }
 		min-width: 40px !important;
 	}
 	.workInfo h2{
-		font-size: 34px !important;
-	}
-	.workInfo h3{
 		font-size: 28px !important;
+	}
+	.workInfo h3, .info h1, .projectInfo .theFeatures h2, .role h1{
+		font-size: 22px !important;
 	}
 
 	.workDescription p{
-		font-size: 24px !important;
+		font-size: 18px !important;
 	}
 
 	.workItem{
@@ -312,6 +278,15 @@ a:visited { text-decoration: none; color:black; }
 	.projectDescription{
 		width: 100% !important;
 	}
+
+	.projectInfo .info p {
+		font-size: 16px !important;
+	}
+	
+	.projectInfo .theFeatures li {
+		font-size: 15px;
+	}
+
 
 	.role{
 		padding-top: 20px !important;
@@ -334,9 +309,9 @@ a:visited { text-decoration: none; color:black; }
 }
 
 .email{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-size: 16px;
-	color: #d8b5f3;
+	color: #03807d;
 	margin-bottom: 8px;
 }
 .aboutBox{
@@ -349,7 +324,7 @@ a:visited { text-decoration: none; color:black; }
 	justify-content: flex-start;
 }
 .aboutwriteup .description p{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-weight: 400;
 	padding-bottom: 15px;
 	line-height: 160%;
@@ -415,7 +390,7 @@ a:visited { text-decoration: none; color:black; }
 }
 
 .title, .dates{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-size: 16px;
 }
 
@@ -519,7 +494,7 @@ a:visited { text-decoration: none; color:black; }
 
 
 .songName{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-size:18px;
 	font-weight: 700;
 	padding-right: 10px;
@@ -527,7 +502,7 @@ a:visited { text-decoration: none; color:black; }
 }
 
 .artist{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-size:18px;
 	font-weight: 400;
 }
@@ -551,7 +526,7 @@ ul{
 	margin-bottom: 5px;
 }
 .item ul li{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-size: 16px;
 }
 
@@ -565,12 +540,13 @@ ul{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding-bottom: 30px;
-	padding-top: 30px;
+	padding: 30px 20px;
+	color: #333333;
+	transition: all 0.2s ease-in-out;
 }
 
 .workItem:hover{
-	background-color: #d8b5f3;
+	background-color: #333333;
 	cursor: pointer;
 	color: white;
 }
@@ -580,22 +556,19 @@ ul{
 }
 
 .workInfo h2{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-weight: 700;
-	font-style: italic;
 	font-size: 40px;
 	/*color: #fe065e;*/
 }
 
 .workInfo h3{
-	font-family: 'Cabin', Arial, sans-serif;
-	font-style: italic;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-size: 30px;
 }
 
 
 .workDescription p{
-	font-family: 'Cabin', Arial, sans-serif;
 	font-size: 28px;
 }
 
@@ -607,7 +580,7 @@ ul{
 
 /* Projects */
 .projectContainer{
-	padding-bottom: 20px;
+	padding: 20px;
 }
 
 .projectInfo{
@@ -621,8 +594,9 @@ ul{
 
 
 .info p{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'Sora', Arial, sans-serif;
 	font-size: 18px;
+	line-height: 28px;
 	width: 60%;
 }
 
@@ -631,18 +605,19 @@ ul{
 }
 
 .features li{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'Sora', Arial, sans-serif;
 	font-size: 18px;
+	line-height: 30px;
 }
 
 .boldItalicRed{
 	font-style: italic;
 	font-size: 20px;
-	color: #d8b5f3;
+	color: #03807d;
 }
 
 .role ul li{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'Sora', Arial, sans-serif;
 }
 
 .role{
@@ -670,13 +645,13 @@ ul{
 }
 
 .projectImage p{
-	font-family: 'Cabin', Arial, sans-serif;
+	font-family: 'CircularStd', Arial, sans-serif;
 	font-size: 18px;
 	font-style: italic;
 }
 
 .textLink, .textLink:visited{
-	color: #d8b5f3;
+	color: #03807d;
 }
 
 /* Animate Projects coming in & out of view */
@@ -711,11 +686,11 @@ ul{
 	justify-content: center;
 }
 .landingText p{
-	/*font-family: 'Cabin', Arial, sans-serif;*/
 	text-align: center;
-	font-size: 48px;
-	width: 63%;
-	color: black;
+	font-size: 34px;
+	line-height: 45px;
+	width: 70%;
+	color: rgb(32, 32, 32);
 }
 
 
