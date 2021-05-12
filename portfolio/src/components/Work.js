@@ -8,6 +8,7 @@ import PigGame from './PigGame'
 import DiscoverLately from './DiscoverLately'
 import MoveMirror from './MoveMirror'
 import AOS from './AOS'
+import TheGuestbook from './TheGuestbook'
 
 
 class Work extends Component{
@@ -22,9 +23,17 @@ class Work extends Component{
 	      isHiddenPigGame: true,
 		  isHiddenDiscoverLately: true,
 		  isHiddenMoveMirror: true,
-		  isHiddenAOS: true
+		  isHiddenAOS: true,
+		  isHiddenTheGuestbook: true
 	    }
 	  }
+
+	toggleHiddenTheGuestbook () {
+	    this.setState({
+			isHiddenTheGuestbook: !this.state.isHiddenTheGuestbook
+	    })
+  	}
+
 
 	toggleHiddenPersonalSite () {
 	    this.setState({
@@ -79,17 +88,17 @@ class Work extends Component{
 
 		  <div className="workContainer">
 
-			<div className="workItem" onClick={this.toggleHiddenAOS.bind(this)}>
+			<div className="workItem" onClick={this.toggleHiddenTheGuestbook.bind(this)}>
 		    	<div className="workInfo">
-			    	<h2> Art Of Sport </h2>
-			    	<h3> Use All Five, Art Of Sport, 2018 </h3>
+			    	<h2> The Guestbook </h2>
+			    	<h3> Feb 2019 - now </h3>
 		    	</div>
 		    	<div className="workDescription">
-		    		<p> Development of the Art of Sport Launch Site </p>
+		    		<p> Key frontend engineer for various projects in our organization, including the revamp of our B2C site, B2B sites, Chrome extension, and integrations with hotel's sites. </p>
 		    	</div>
 		    </div>
 		    <ReactCSSTransitionGroup transitionName="anim" transitionAppear={false}  transitionEnter={true} transitionEnterTimeout={300} transitionLeave={false}>
-		    {!this.state.isHiddenAOS && <AOS />}
+		    {!this.state.isHiddenTheGuestbook && <TheGuestbook />}
 		    </ReactCSSTransitionGroup>
 		    <div className="line"></div>
 
@@ -120,20 +129,6 @@ class Work extends Component{
 			    </ReactCSSTransitionGroup>
 			<div className="line"></div>
 
-		  	<div className="workItem" onClick={this.toggleHiddenPigGame.bind(this)}>
-		    	<div className="workInfo">
-			    	<h2> Pig Game </h2>
-			    	<h3> Side Project, 2017 </h3>
-		    	</div>
-		    	<div className="workDescription">
-		    		<p> Side project to better understand plain Javascript </p>
-		    	</div>
-			</div>
-			    <ReactCSSTransitionGroup transitionName="anim" transitionAppear={false}  transitionEnter={true} transitionEnterTimeout={300} transitionLeave={false}>
-			    {!this.state.isHiddenPigGame && <PigGame />}
-			    </ReactCSSTransitionGroup>
-			<div className="line"></div>
-
 		  	<div className="workItem" onClick={this.toggleHiddenPersonalSite.bind(this)}>
 		    	<div className="workInfo">
 			    	<h2> Personal Site </h2>
@@ -159,34 +154,6 @@ class Work extends Component{
 		    </div>
 		    <ReactCSSTransitionGroup transitionName="anim" transitionAppear={false}  transitionEnter={true} transitionEnterTimeout={300} transitionLeave={false}>
 		    {!this.state.isHiddenStabilityDashboard && <StabilityDashboard />}
-		    </ReactCSSTransitionGroup>
-		    <div className="line"></div>
-
-		    <div className="workItem" onClick={this.toggleHiddenUnchartedWaters.bind(this)}>
-		    	<div className="workInfo">
-			    	<h2> Uncharted Waters </h2>
-			    	<h3> Daily Bruin, 2016 </h3>
-		    	</div>
-		    	<div className="workDescription">
-		    		<p> Daily Bruin Flatpage to enchance story</p>
-		    	</div>
-		    </div>
-		    <ReactCSSTransitionGroup transitionName="anim" transitionAppear={false}  transitionEnter={true} transitionEnterTimeout={300} transitionLeave={false}>
-		    {!this.state.isHiddenUnchartedWaters && <UnchartedWaters />}
-		    </ReactCSSTransitionGroup>
-		    <div className="line"></div>
-
-		    <div className="workItem" onClick={this.toggleHiddenFindPOC.bind(this)}>
-		    	<div className="workInfo">
-			    	<h2> Find the POC! </h2>
-			    	<h3> Qualcomm, 2015 </h3>
-		    	</div>
-		    	<div className="workDescription">
-		    		<p> Design & Development of in house tool to quickly find the point of contact for a specific file </p>
-		    	</div>
-		    </div>
-		    <ReactCSSTransitionGroup transitionName="anim" transitionAppear={false}  transitionEnter={true} transitionEnterTimeout={300} transitionLeave={false}>
-		    {!this.state.isHiddenFindPOC && <FindPOC />}
 		    </ReactCSSTransitionGroup>
 		    
 		  </div>

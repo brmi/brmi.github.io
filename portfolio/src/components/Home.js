@@ -3,10 +3,10 @@ import React from 'react'
 const Home = () => (
 <div className="landingPageContainer">
 	<div className="landingText">
-		<p> Desiree is a developer and designer living in sunny Los Angeles.
-		She likes digital experiences that dazzle and amaze.
-		Her goal is to curate a digital experience that will make the user's eyes crazed with wonder and heart beat fast with pure delight!
-		<br/>Stay tuned... </p>
+		<p> Desiree is a frontend engineer living in sunny Los Angeles.
+		Her goal is to make the world a more transparent and efficient place by creating 
+		enjoyable user experiences that are accessible to all.
+		</p>
 	</div>
  </div>
 

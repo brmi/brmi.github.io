@@ -9,7 +9,6 @@ const Header = () => (
       <ul>
       	<li className="name"><div className="slantedBox"><Link to='/'>desiree lenart</Link></div></li>
         <li className="links"><Link to='/work'>work</Link></li>
-        <li className="links"><Link to='/about'>about</Link></li>
       </ul>
     </nav>
   </header>

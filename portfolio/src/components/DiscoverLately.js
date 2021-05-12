@@ -27,15 +27,6 @@ const DiscoverLately = () => (
                 </ul>
             </div>
 
-            <div className="theFeatures">
-                <h2> future plans </h2>
-                <ul className="features">
-                    <li><span className="boldItalicRed"> >> </span>Make it faster! </li>
-                    <li><span className="boldItalicRed"> >> </span>Add loading animations</li>
-                    <li><span className="boldItalicRed"> >> </span>See what geographic location a track is listened to most</li>
-                </ul>
-            </div>
-
         </div>
 
         <div className="role">
